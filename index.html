@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio de aledev</title>
+        <meta name="robots" content="index, follow" >
+        <meta name="theme-color" content="#09f"> <!--esto es para cambiar el color de la barra superior del navegador de internet-->
+        <meta name="description" content="Porfolio de aledev programador de java"> <!---->
+        <link rel="icon" href="images/yo.jpg" type="image/jpg">
+        <meta property="og:title" content="Porfolio de aledev1"><!---->
+        <meta property="og:image" content="/images/yo.jpg"><!---->
+        <meta property="og:image:alt" content="un banco"><!---->
+        <link rel="alternate" href="google.com" hreflang="en-BG"><!---->
+        <link rel="cononical" href="bing.com"><!---->
+        <style>
+            body {
+                background: #09f;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio de aledev 👨‍💻</h1>
+
+            <iframe src="https://ohmyposh.dev" title="Pagina de Oh my posh" frameborder="0" allowfullscreen
+            style="width: 100%; aspect-ratio: 16/9;"></iframe>
+
+            <nav>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="http://google.com" 
+                   target="_blank"
+                   rel="noreferrer">Google</a>
+            </nav>
+        </header>
+        <audio controls="https://download.samplelib.com/mp3/sample-15s.mp3"></audio>
+
+        <video autoplay mute loop poster="images/yo.jpg" src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4"></video>
+
+        <dialog id="modal">
+            <h1>Sabias que puedes abrir una modeal así</h1>
+            <p>Y es totalmente nayivo de html</p>
+            <button id="hide">Cerrar modal</button>
+        </dialog>
+
+        <button id="show">Ver mas Información</button>
+
+        <script>
+            window.show.addEventListener('click',()=> {
+                window.modal.showModal()
+            })
+            window.hide.addEventListener('click',()=> {
+                window.modal.close()
+            })
+        </script>
+
+        <main>
+            <section>
+                <p><i>+15 años de expercia de</i> <strong>ingeniero de software</strong></p>
+                <h2 id="experiencia">Experiencia</h2>
+                <ol type="1" reversed start="10">
+                    <li class="list-item">Banco de cuba</li>
+                    <li class="list-item" value="22">Simpro</li>
+                    <li class="list-item">Casa</li>
+                    <li class="list-item">Confips</li>
+                </ol>
+                <h2 id="proyectos">Proyectos</h2>
+                <a download href="images/yo.jpg">
+                    <img 
+                        src="images/yo.jpg" 
+                        alt="banca madera" 
+                        title="Foto de Banco"
+                        width="200"
+                        height="200"
+                        id="photo-banca">
+            </a>
+            </section>
+            <section>
+                <article>
+                    <header>
+                        <h4>La página de Tesla</h4>
+                        <img style="width: 100%; aspect-ratio: 1266/611;" loading="lazy" src="images/tesla.JPG" alt="imagen de la pagina we de tesla">
+                    </header>
+                    <p>Elon Masck me llamo para contratarme</p>
+                    <footer><small>Tecnologias ulizando HTML</small></footer>
+                </article>
+            </section>
+            <section>
+                <h2>Preguntas Frecuentes</h2>
+                <details open>
+                    <summary>¿Que estudios tienes?</summary>
+                    <p>Estudie en la universidad e la habana una licenciatura en ciencias de la computacion por el timepo de 5 años </p>
+                </details>
+                <details>
+                    <summary>¿Cuales son tus hobbies?</summary>
+                    <p>Me gusta el deporte</p>
+                </details>
+            </section>
+            <section>
+                <h2>Formularios</h2>
+                <form action="/" method="post">
+                    <fieldset>
+                        <legend>Información Personal</legend>
+                        <div>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name" placeholder="Alejandro Martinez" required>
+                        </div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="AlejandroMartinez@gmail.com" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información Adicional</legend>
+                        <label for="phone">Telefono:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="0983562451" required ">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Otros</legend>
+                        <label for="why">¿Porque quieres ingresar?</label>
+                        <div>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="2">Estudio</option>
+                            <option value="3">Duda</option>
+                        </select>
+                        </div>
+                        <div>
+                        <label for="terms">¿Aceptas los terminos?</label>
+                        <input type="checkbox" name="terms" id="terms">
+                        </div>
+                        <div>
+                            <datalist id="languages">
+                                <option value="JS"></option>
+                                <option value="Python"></option>
+                                <option value="Java"></option>
+                                <option value="C#"></option>
+                            </datalist>
+                            <label for="languages">Con que leguaje quieres que te ayude</label>
+                            <input list="languages" name="languages" id="languages">
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Enviar Contacto">
+                    <button>Enviar Contacto</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <small>Copyright @ 2024 - El Porfolio mas bello del mundo</small>
+            <a href="mailto:alemartinezcuba@gmail.com">Enviame un correo</a>
+            <a href="tel:+59398765437">LLamar por telefono</a>
+            <a href="whatsapp://send?text=Hola aledev">Mensaje whatsapp</a>
+        </footer>
+    </body>
+
+
+</html>
+    
